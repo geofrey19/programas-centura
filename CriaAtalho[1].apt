@@ -1,0 +1,866 @@
+Application Description: Centura SQLWindows/32 Standard Application Template
+	Outline Version - 4.0.27
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400020000
+0020: 0000000000A50000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFFFFFFFF FF000000007C0200 004D010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D04000000075769 6E646F7773037878
+0080: 780D4368696C6420 57696E646F77730D 7062437269617241 74616C686F
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+			Left: -0.013"
+			Top:    0.0"
+			Width:  8.013"
+			Height: 4.969"
+		Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left: 4.15"
+			Top:    1.885"
+			Width:  3.8"
+			Height: 2.073"
+		Class Editor Location
+			Visible? No
+			Left: 0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left: 6.388"
+			Top:    0.729"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+	Libraries
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: 3D Face Color
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+			Library name: SHELL32.DLL
+				! Function: FindExecutableA
+					Description: The FindExecutable function retrieves the name and handle to the executable (.EXE) file associated with the specified filename.
+							
+							Parameters:
+								lpFile 		Pointer to a null-terminated string specifying a filename. This can be a document or executable file.
+								lpDirectory 	Pointer to a null-terminated string specifying the default directory.
+								lpResult 		Pointer to a buffer to receive the filename when the function returns. This filename is a null-terminated string specifying the executable file started when an “open” association
+										is run on the file specified in the lpFile parameter.
+							
+							Return Values:
+								If the function succeeds, the return value is greater than 32.
+								If the function fails, the return value is less than or equal to 32. The following table lists the possible error values:
+								Value  				Meaning
+								0 				The system is out of memory or resources.
+							 	31 				There is no association for the specified file type.
+							 	ERROR_FILE_NOT_FOUND 		The specified file was not found.
+								ERROR_PATH_NOT_FOUND 	The specified path was not found.
+								ERROR_BAD_FORMAT 		The .EXE file is invalid (non-Win32 .EXE or error in .EXE image).
+							 
+							Remarks:
+							When FindExecutable returns, the lpResult parameter may contain the path to the DDE server started if no server responds to a request to initiate a DDE conversation.
+					Export Ordinal: 0
+					Returns 
+						Number: INT
+					Parameters 
+						String: LPSTR
+						String: LPSTR
+						Receive String: LPSTR
+				! Function: Shell_NotifyIconA
+					Description: Sends a message to the system to add, modify, or delete an icon from the taskbar status area.
+							
+							Trägt ein Shell-Icon ein in den System-Try (Taskbar rechts unten) ein.
+							Die frei vergebbare Nachticht wird an das Eigner-Fenster geschickt.
+							
+							benötigte Konstanten:
+							
+							Number: NIM_ADD				= 0
+							Number: NIM_MODIFY			= 1
+							Number: NIM_DELETE			= 2
+							!
+							Number: NIF_MESSAGE			= 1
+							Number: NIF_ICON				= 2
+							Number: NIF_TIP				= 4
+							
+							Parameter:
+							Number: nFlags			! Flags  (   NIM_ADD   	Tray hinzufügen
+												NIM_MODIFY	vorhandenes Tray ändern,
+												NIM_DELETE	Tray löschen)
+												
+							Number: DWORD			! Nummer
+							Window Handle: hWndOwner     	! Fenster welches die Trayaktivierungsnachricht bekommt
+							Number: nShowFlags		 ! Flags (	NIF_ICON  Icon anzeigen,
+												NIF_MESSAGE Nachricht schicken,
+												NIF_TIP ToolTip anzeigen)
+							Number: nMsgNumber   		! frei vergebbare Nachrichtenummer die an das Eigner-Fenster verschickt wird
+							Number: hIcon			! Icon das angezeigt wird
+							String:	sStatusText		! Statustext der angezeigt wird
+							
+							Bsp:
+							
+							Form Window: frmXX
+							...
+							...
+							Message Actions
+							On SAM_Destroy
+							    Call Shell_NotifyIconA( NIM_DELETE, 92, hWndForm, 1, NIF_ICON | NIF_MESSAGE | NIF_TIP, 30000, hIcon, '' )
+							
+							On SAM_Create
+							    Set hIcon = LoadIconA( ...)
+							    Call Shell_NotifyIconA( NIM_ADD, 92, hWndForm, 1, NIF_ICON | NIF_MESSAGE | NIF_TIP, 30000, hIcon, 'TestTray' )
+							
+							On 30000
+							   Select Case lParam
+								Case WM_RBUTTONDOWN
+								     Call SetForegroundWindow( hWndForm )
+								     Call SalTrackPopupMenu( hWndForm, 'Mouse',
+										TPM_LeftAlign | TPM_CursorX |
+										TPM_CursorY | TPM_RightButton, 0, 0 )
+								     Break
+								Case WM_LBUTTONDBCLK
+								      Call SalCreateWindow( 'frmShow', hWndForm )
+								      Break
+							
+							Return Values:
+								If the function succeeds, the return value is nonzero.
+								If the function fails, the return value is zero.
+					Export Ordinal: 0
+					Returns 
+						Boolean: BOOL
+					Parameters 
+						Number: DWORD
+						structPointer 
+							Number: DWORD
+							Window Handle: HWND
+							Number: UINT
+							Number: UINT
+							Number: UINT
+							Number: DWORD
+							String: char[64]
+				! Function: ShellExecuteA
+					Description: The ShellExecute function opens or prints a specified file. The file can be an executable file or a document file. See ShellExecuteEx also.
+							
+							Parameters:
+								hwnd 		Specifies a parent window. This window receives any message boxes that an application produces. For example, an application may report an error by producing a message box.
+								lpOperation 	Pointer to a null-terminated string that specifies the operation to perform. The following operation strings are valid:
+										String  		Meaning
+										"open"		The function opens the file specified by lpFile. The file can be an executable file or a document file. The file can be a folder to open.
+										"print" 		The function prints the file specified by lpFile. The file should be a document file. If the file is an executable file, the function opens the file, as if “open” had been specified.
+										"explore"		The function explores the folder specified by lpFile.
+										The lpOperation parameter can be NULL. In that case, the function opens the file specified by lpFile.
+								lpFile 		Pointer to a null-terminated string that specifies the file to open or print or the folder to open or explore. The function can open an executable file or a document file. The function can print a document file.
+								lpParameters 	If lpFile specifies an executable file, lpParameters is a pointer to a null-terminated string that specifies parameters to be passed to the application.
+										If lpFile specifies a document file, lpParameters should be NULL.
+								lpDirectory 	Pointer to a null-terminated string that specifies the default directory.
+								nShowCmd 	If lpFile specifies an executable file, nShowCmd specifies how the application is to be shown when it is opened. This parameter can be one of the following values:
+										Value 			Meaning
+							 			SW_HIDE 		Hides the window and activates another window.
+							 			SW_MAXIMIZE 		Maximizes the specified window.
+							 			SW_MINIMIZE 		Minimizes the specified window and activates the next top-level window in the Z order.
+							 			SW_RESTORE 		Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position.
+													An application should specify this flag when restoring a minimized window.
+							 			SW_SHOW 		Activates the window and displays it in its current size and position.
+							 			SW_SHOWDEFAULT 	Sets the show state based on the SW_ flag specified in the STARTUPINFO structure passed to the CreateProcess function by the program that started the application.
+													An application should call ShowWindow with this flag to set the initial show state of its main window.
+							 			SW_SHOWMAXIMIZED 	Activates the window and displays it as a maximized window.
+										SW_SHOWMINIMIZED 	Activates the window and displays it as a minimized window.
+							 			SW_SHOWMINNOACTIVE 	Displays the window as a minimized window. The active window remains active.
+							 			SW_SHOWNA 		Displays the window in its current state. The active window remains active.
+							 			SW_SHOWNOACTIVATE 	Displays a window in its most recent size and position. The active window remains active.
+							 			SW_SHOWNORMAL 	Activates and displays a window. If the window is minimized or maximized, Windows restores it to its original size and position.
+													An application should specify this flag when displaying the window for the first time.
+							
+										If lpFile specifies a document file, nShowCmd should be zero.
+							
+							Return Values:
+								If the function succeeds, the return value is the instance handle of the application that was run, or the handle of a dynamic data exchange (DDE) server application.
+								If the function fails, the return value is an error value that is less than or equal to 32. The following table lists these error values:
+								Value  				Meaning
+							 	0 				The operating system is out of memory or resources.
+							 	ERROR_FILE_NOT_FOUND 		The specified file was not found.
+							 	ERROR_PATH_NOT_FOUND 	The specified path was not found.
+							 	ERROR_BAD_FORMAT 		The .EXE file is invalid (non-Win32 .EXE or error in .EXE image).
+							 	SE_ERR_ACCESSDENIED 		The operating system denied access to the specified file.
+							 	SE_ERR_ASSOCINCOMPLETE 	The filename association is incomplete or invalid.
+							 	SE_ERR_DDEBUSY 		The DDE transaction could not be completed because other DDE transactions were being processed.
+							 	SE_ERR_DDEFAIL 		The DDE transaction failed.
+							 	SE_ERR_DDETIMEOUT 		The DDE transaction could not be completed because the request timed out.
+							 	SE_ERR_DLLNOTFOUND 		The specified dynamic-link library was not found.
+							 	SE_ERR_FNF 			The specified file was not found.
+							 	SE_ERR_NOASSOC 		There is no application associated with the given filename extension.
+							 	SE_ERR_OOM 			There was not enough memory to complete the operation.
+							 	SE_ERR_PNF 			The specified path was not found.
+							 	SE_ERR_SHARE 			A sharing violation occurred.
+							 
+							Remarks:
+							The file specified by the lpFile parameter can be a document file or an executable file. If the file is a document file, the ShellExecute function opens or prints it, depending on the value of the lpOperation parameter.
+							If the file is an executable file, the ShellExecute function opens it, even if lpOperation specifies printing.
+							
+							You can use ShellExecute to open or explore a shell folder. To open a folder, use either of the following calls:
+							
+							ShellExecute(handle, NULL, path_to_folder, NULL, NULL, SW_SHOWNORMAL);
+							or
+							ShellExecute(handle, "open", path_to_folder, NULL, NULL, SW_SHOWNORMAL);
+							 
+							To explore a folder, use the following call:
+							
+							ShellExecute(handle, "explore", path_to_folder, NULL, NULL, SW_SHOWNORMAL);
+							 
+							If lpOperation is NULL, the function opens the file specified by lpFile. If lpOperation is "open" or "explore", the function will force an open window or explorer.
+					Export Ordinal: 0
+					Returns 
+						Number: DWORD
+					Parameters 
+						Window Handle: HWND
+						String: LPSTR
+						String: LPSTR
+						String: LPSTR
+						String: LPSTR
+						Number: INT
+				Function: SHAddToRecentDocs
+					Description: description: (taken from teatalk)
+							 Adds or deletes documents to the startmenu of recently used documents.
+							
+							The number specifies the type of the string parameter (set this to 2).
+							The second parameter tells the API which file is to be added to the list of recent documents.
+							
+							example:
+							
+							Call SHAddToRecentDocs( 2, "C:\\Tmp\\Test.txt" )
+							
+							Call SHAddToRecentDocs( 2, STRING_Null ) clears the list
+							
+							
+					Export Ordinal: 0
+					Returns
+					Parameters
+						Number: UINT
+						String: LPCSTR
+				! Function: SHGetFileInfo
+					Description: WINSHELLAPI DWORD WINAPI SHGetFileInfo
+							(	LPCTSTR pszPath,
+								DWORD dwFileAttributes,
+								SHFILEINFO FAR *psfi,
+								UINT cbFileInfo,
+								UINT uFlags
+							);
+							
+							typedef struct _SHFILEINFO
+							{
+								HICON hIcon;
+								int   iIcon;
+							    	DWORD dwAttributes;
+								char  szDisplayName[MAX_PATH];
+								char  szTypeName[80];
+							} SHFILEINFO;
+					Export Ordinal: 0
+					Returns 
+						Number: DWORD
+					Parameters 
+						String: LPCSTR
+						Number: DWORD
+						structPointer 
+							Receive Number: HANDLE
+							Receive Number: INT
+							Receive Number: DWORD
+							! Çäåñü ä.á. _MAX_PATH = 260, íî centura íå ïîçâîëÿåò èìåòü ñòðîêè áîëåå 255 â ìàññèâå.
+							String: char[255]
+							String: char[5]
+							!
+							String: char[80]
+						Number: UINT
+						Number: UINT
+				! Function: SHGetFileInfoA
+					Description: 
+							Parameters:
+								pszPath			A string containing the full file path
+								dwFileAttributes		? always use 0
+								psfi			SHFILEINFO Structure
+												hIcon As Long		- icon handle
+												iIcon As Long		- system image list index
+												dwAttributes As Long	- do not use this - use GetFileInfo instead
+												szDisplayName As String * 260  (eg. "testdoc.doc")
+													sPad (there seems to be some reason to need to pad this out by 5 bytes - who knows why)
+												szTypeName As String * 80       (eg. "Microsoft Word Document" )
+							
+								cbFileInfo			Length of psfi file structure
+								uFlags			Flags for requested items
+												SHGFI_ICON = &H100                         '  get icon
+												SHGFI_DISPLAYNAME = &H200                  '  get display name
+												SHGFI_TYPENAME = &H400                     '  get type name
+												SHGFI_ATTRIBUTES = &H800                   '  get attributes
+												SHGFI_ICONLOCATION = &H1000                '  get icon location
+												SHGFI_EXETYPE = &H2000                     '  return exe type
+												SHGFI_SYSICONINDEX = &H4000                '  get system icon index
+												SHGFI_LINKOVERLAY = &H8000                 '  put a link overlay on icon
+												SHGFI_SELECTED = &H10000                   '  show icon in selected state
+												SHGFI_LARGEICON = &H0                      '  get large icon
+												SHGFI_SMALLICON = &H1                      '  get small icon
+												SHGFI_OPENICON = &H2                       '  get open icon
+												SHGFI_SHELLICONSIZE = &H4                  '  get shell size icon
+												SHGFI_PIDL = &H8                           '  pszPath is a pidl
+												SHGFI_USEFILEATTRIBUTES = &H10             '  use passed dwFileAttribute
+							Return Values:
+								If the function succeeds, the return value is nonzero.
+								If the function fails, the return value is zero.
+					Export Ordinal: 0
+					Returns 
+						Number: DWORD
+					Parameters 
+						String: LPCSTR
+						Number: DWORD
+						structPointer 
+							Receive Number: DWORD
+							Receive Number: DWORD
+							Receive Number: DWORD
+							Receive String: char[255]
+							Receive String: char[5]
+							Receive String: char[80]
+						Number: UINT
+						Number: UINT
+				! Function: SHFileOperation
+					Description: int SHFileOperation( LPSHFILEOPSTRUCT lpFileOp );
+					Export Ordinal: 0
+					Returns 
+						Number: LONG
+					Parameters 
+						String: LPVOID
+				! Function: SHRunDialog
+					Description: Owner      hWndOwner
+							IconHandle LongInt
+							Directory  LPCSTR
+							Title      LPCSTR
+							Prompt     LPCSTR
+							Flags      UINT
+							
+							Example:
+							default: Call SH.RunDialog(hWndForm,0,TRUE,STRING_Null,STRING_Null,0)
+							custom: Call SH.RunDialog(hWndForm,0,TRUE,'Yep my text','Hope this works',0)
+							
+					Export Ordinal: 61
+					Returns 
+						Number: LONG
+					Parameters 
+						Window Handle: HWND
+						Number: LONG
+						String: LPCSTR
+						String: LPCSTR
+						String: LPCSTR
+						Number: UINT
+				Function: SHGetSpecialFolderPathA
+					Description:
+					Export Ordinal: 0
+					Returns
+					Parameters
+						Window Handle: HWND
+						Receive String: LPSTR
+						Number: INT
+						Boolean: BOOL
+				! Function: SHBrowseForFolder
+					Description: 
+					Export Ordinal: 0
+					Returns 
+						Number: LONG
+					Parameters 
+						structPointer 
+							Window Handle: HWND
+							Number: LPVOID
+							Receive String: LPSTR
+							String: LPSTR
+							Number: UINT
+							Number: LPVOID
+							Number: LPARAM
+							Receive Number: INT
+				! Function: SHGetPathFromIDList
+					Description: 
+					Export Ordinal: 0
+					Returns 
+						Number: LONG
+					Parameters 
+						Number: LPVOID
+						Receive String: LPSTR
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! ! Shell SH...(...) function constant
+				Number: CSIDL_RECENT        =            0x0008
+				Number: SHARD_PATHA         =            0x00000002
+				Number: SHGFI_ICON             = 0x00000100
+					! get icon
+				Number: SHGFI_DISPLAYNAME =      0x00000200
+					! get display name
+				Number: SHGFI_TYPENAME        =  0x00000400
+					! et type name
+				Number: SHGFI_ATTRIBUTES      =  0x00000800
+					! get attributes
+				Number: SHGFI_ICONLOCATION   =   0x00001000
+					! get icon location
+				Number: SHGFI_EXETYPE          = 0x00002000
+					! return exe type
+				Number: SHGFI_SYSICONINDEX=      0x00004000
+					! get system icon index
+				Number: SHGFI_LINKOVERLAY    =   0x00008000
+					! put a link overlay on icon
+				Number: SHGFI_SELECTED        =  0x00010000
+					! show icon in selected state
+				Number: SHGFI_ATTR_SPECIFIED=    0x00020000
+					! get only specified attributes
+				Number: SHGFI_LARGEICON =        0x00000000
+					! get large icon
+				Number: SHGFI_SMALLICON   =      0x00000001
+					! get small icon
+				Number: SHGFI_OPENICON      =    0x00000002
+					! get open icon
+				Number: SHGFI_SHELLICONSIZE =    0x00000004
+					! get shell size icon
+				Number: SHGFI_PIDL          =    0x00000008
+					! pszPath is a pidl
+				Number: SHGFI_USEFILEATTRIBUTES = 0x00000010
+					! use passed dwFileAttribute
+		Resources
+		Variables
+		Internal Functions
+			Function: SalFileCreateFileLink
+				Description: author: 	Catalin
+						date:
+						version:	1.00 function implemented
+						
+						description:
+						Creates a link to a file (pointer)
+						
+						example:
+						Call SalFileCreateFileLink("C:\\your_file.exe", "C:\\your_link.lnk")
+				Returns
+				Parameters
+					String: psFile
+.data INHERITPROPS
+0000: 0100
+.enddata
+						! file for which the link should be created
+					String: psLink
+.data INHERITPROPS
+0000: 0100
+.enddata
+						! the path and filename of the link
+				Static Variables
+				Local variables
+					String: lsFileName
+					String: sRecentPath
+				Actions
+					Call SalStrSetBufferLength( sRecentPath, 255 )
+					Call SHGetSpecialFolderPathA( hWndForm, sRecentPath , CSIDL_RECENT, FALSE )
+					Call SHAddToRecentDocs( SHARD_PATHA , psFile )
+					Set lsFileName = SalFileGetAppName( psFile )
+					Call SalFileCopy( sRecentPath || "\\" || lsFileName || ".lnk", psLink, TRUE )
+			Function: SalFileGetAppName
+				Description: author: 	tl
+						date:	2000
+						version:	1.00
+						
+						Gibt nur den Applikationamen zurück (aus Pfad extrahiert)
+				Returns
+					String:
+				Parameters
+					String: psPath
+.data INHERITPROPS
+0000: 0100
+.enddata
+				Static Variables
+				Local variables
+				Actions
+					Return SalStrRightX(psPath, SalStrLength(psPath) - SalStrLength( SalFileGetPath(psPath)) )
+			Function: SalFileGetAppPath
+				Description: author: 	tl
+						date:	2000
+						version:	1.00
+						
+						Gibt den eigenen Applikationspfad zurück
+				Returns
+					String:
+				Parameters
+				Static Variables
+				Local variables
+				Actions
+					Return SalFileGetPath( strArgArray[0] )
+			Function: SalFileGetPath
+				Description: author: 	fecher
+						date:	2000
+						version:	1.00
+						(adapted by tl)
+						
+						Gibt nur den Pfad zurück ohne Applikationsname
+				Returns
+					String:
+				Parameters
+					String: psPath
+.data INHERITPROPS
+0000: 0100
+.enddata
+				Static Variables
+				Local variables
+					String: sAppDirectory
+					Number: nIdx
+				Actions
+					Set sAppDirectory  = psPath
+					If sAppDirectory = ''
+						Call SalFileGetCurrentDirectory(sAppDirectory)
+						Set sAppDirectory= sAppDirectory || '\\'
+					Else
+						While SalStrScan( SalStrRightX( sAppDirectory, SalStrLength( sAppDirectory ) - ( nIdx + 1))  , '\\\\' ) != -1
+							Set nIdx = ( SalStrScan( SalStrRightX( sAppDirectory, SalStrLength( sAppDirectory ) - ( nIdx + 1))  , '\\\\' ) + 1) + nIdx
+						Set sAppDirectory = SalStrLeftX(sAppDirectory, nIdx + 1)
+					Return sAppDirectory
+		Named Menus
+		Class Definitions
+		Default Classes
+			MDI Window: cBaseMDI
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+			ActiveX:
+		Application Actions
+	Form Window: xxx
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title:
+		Icon File:
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Yes
+			Initial State: Normal
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left: 0.55"
+				Top:    0.458"
+				Width:  6.65"
+				Width Editable? Yes
+				Height: 2.726"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Data Field: dfArquivo
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 0.4"
+						Top:    0.226"
+						Width:  5.317"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						Set MyValue = 'c:\\windows\\calc.exe'
+			Pushbutton: pbCriarAtalho
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Criar Atalho
+				Window Location and Size
+					Left: 2.283"
+					Top:    0.988"
+					Width:  1.2"
+					Width Editable? Yes
+					Height: 0.298"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						If SalStrTrimX( dfArquivo ) != STRING_Null AND SalStrTrimX( dfAtalho ) != STRING_Null
+							Call SalFileCreateFileLink( dfArquivo, dfAtalho )
+			Background Text: Arquivo:
+				Resource Id: 48466
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.467"
+					Top:    0.071"
+					Width:  4.367"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Data Field: dfAtalho
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 0.383"
+						Top:    0.643"
+						Width:  5.317"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						Set MyValue = 'c:\\windows\\desktop\\calculadora.lnk'
+			Background Text: Atalho:
+				Resource Id: 48467
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.45"
+					Top:    0.488"
+					Width:  4.367"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions

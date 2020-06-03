@@ -1,0 +1,1065 @@
+.head 0 +  Application Description: Centura Team Developper 1.1.2
+© Christian Astor 
+    - Adresse E-mail : 	castorix@club-internet.fr
+    - Adresse ICQ (UIN) :	4396797
+® 1 Février 2001
+.head 1 -  Outline Version - 4.0.27
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000A50000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFFFFFFFF FF000000007C0200 004D010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 00000000001D6B3A 5C74656D705C4765 7457696E646F7773 56657273696F6E2E
+0020: 6578651D6B3A5C74 656D705C47657457 696E646F77735665 7273696F6E2E646C
+0040: 6C1D6B3A5C74656D 705C47657457696E 646F777356657273 696F6E2E61706300
+0060: 000101013D493A5C 53697374656D6173 5C466F6E7465735C 4578656D706C6F73
+0080: 2043656E74757261 5C4150495C476574 57696E646F777356 657273696F6E2E72
+00A0: 756E3D493A5C5369 7374656D61735C46 6F6E7465735C4578 656D706C6F732043
+00C0: 656E747572615C41 50495C4765745769 6E646F7773566572 73696F6E2E646C6C
+00E0: 3D493A5C53697374 656D61735C466F6E 7465735C4578656D 706C6F732043656E
+0100: 747572615C415049 5C47657457696E64 6F77735665727369 6F6E2E6170630000
+0120: 0101013D493A5C53 697374656D61735C 466F6E7465735C45 78656D706C6F7320
+0140: 43656E747572615C 4150495C47657457 696E646F77735665 7273696F6E2E6170
+0160: 643D493A5C536973 74656D61735C466F 6E7465735C457865 6D706C6F73204365
+0180: 6E747572615C4150 495C47657457696E 646F777356657273 696F6E2E646C6C3D
+01A0: 493A5C5369737465 6D61735C466F6E74 65735C4578656D70 6C6F732043656E74
+01C0: 7572615C4150495C 47657457696E646F 777356657273696F 6E2E617063000001
+01E0: 01013D493A5C5369 7374656D61735C46 6F6E7465735C4578 656D706C6F732043
+0200: 656E747572615C41 50495C4765745769 6E646F7773566572 73696F6E2E61706C
+0220: 3D493A5C53697374 656D61735C466F6E 7465735C4578656D 706C6F732043656E
+0240: 747572615C415049 5C47657457696E64 6F77735665727369 6F6E2E646C6C3D49
+0260: 3A5C53697374656D 61735C466F6E7465 735C4578656D706C 6F732043656E7475
+0280: 72615C4150495C47 657457696E646F77 7356657273696F6E 2E61706300000101
+02A0: 01
+.enddata
+.head 2 -  Outline Window State: Normal
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+.head 3 -  Left: -0.013"
+.head 3 -  Top:    0.0"
+.head 3 -  Width:  8.013"
+.head 3 -  Height: 4.969"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left: 4.15"
+.head 3 -  Top:    1.885"
+.head 3 -  Width:  3.8"
+.head 3 -  Height: 2.073"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left: 0.575"
+.head 3 -  Top:    0.094"
+.head 3 -  Width:  5.063"
+.head 3 -  Height: 2.719"
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left: 6.388"
+.head 3 -  Top:    0.729"
+.head 2 -  Fully Qualified External References? Yes
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? Yes
+.head 2 -  Use Release 4.0 Scope Rules? No
+.head 1 +  Libraries
+.head 2 -  ! File Include: win32api.apl
+.head 2 -  File Include: cstructl.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Line
+.head 4 -  Line Color: Use Parent
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: 3D Face Color
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0'%'
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;'($'###000')'
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 3 +  Library name: VERSION.DLL
+.head 4 +  Function: GetFileVersionInfoA
+.head 5 -  Description: The GetFileVersionInfo function returns version information about a specified file.
+As with other file installation functions, GetFileVersionInfo works only with Win32 file images. It does not work with 16-bit Windows file images.
+
+Parameters:
+	lptstrFilename 		Pointer to a null-terminated filename string that specifies the file of interest.
+	dwHandle 		This parameter is ignored.
+	dwLen 			Specifies the size, in bytes, of the buffer pointed to by lpData.
+				Call the GetFileVersionInfoSize function to determine the size in bytes of a file’s version information. dwLen should be equal to or greater than that value.
+				If the buffer pointed to by lpData is not large enough, the function truncates the file’s-version information to the size of the buffer.
+	lpData 			Pointer to a buffer to receive file-version information.
+				You can use this value in a subsequent call to the VerQueryValue function.
+
+The file version information is always in Unicode format.
+
+Return Values:
+	If the function succeeds, the return value is nonzero.
+	If the function fails, the return value is zero. To get extended error information, call GetLastError.
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Boolean: BOOL
+.head 5 +  Parameters
+.head 6 -  String: LPSTR
+.head 6 -  Number: DWORD
+.head 6 -  Number: DWORD
+.head 6 -  Number: LPVOID
+.head 4 +  Function: GetFileVersionInfoSizeA
+.head 5 -  Description: The GetFileVersionInfoSize function determines whether the operating system can obtain version information about a specified file.
+If version information is available, GetFileVersionInfoSize returns the size in bytes of that information.
+
+As with other file installation functions, GetFileVersionInfo works only with Win32 file images. It does not work with 16-bit Windows file images.
+
+Parameters:
+	lptstrFilename 		Pointer to a null-terminated filename string that specifies the file of interest.
+	lpdwHandle 		Pointer to a variable that the function sets to zero.
+
+Return Values:
+	If the function succeeds, the return value is the size in bytes of the file’s version information.
+	If the function fails, the return value is zero. To get extended error information, call GetLastError.
+
+Remarks:
+Call the GetFileVersionInfoSize function before calling the GetFileVersionInfo function.
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Number: DWORD
+.head 5 +  Parameters
+.head 6 -  String: LPSTR
+.head 6 -  Receive Number: LPDWORD
+.head 4 -  !
+.head 4 +  Function: VerQueryValueA
+.head 5 -  Description: The VerQueryValue function returns selected version information from the specified version-information resource.
+To retrieve the appropriate resource, the GetFileVersionInfo function must be called before VerQueryValue.
+
+As with the other file installation functions, VerQueryValue will only work with Win32 file images. 16-bit Windows file images are not supported.
+
+Parameters:
+	pBlock 		Points to the buffer containing the version-information resource returned by GetFileVersionInfo.
+	lpSubBlock 	Points to a zero-terminated string specifying which version-information value to retrieve. The string consists of names separated by backslashes (\) and can have one of the following forms:
+			Form  Description
+ 			\ 					Specifies the root block. The function retrieves a pointer to the VS_FIXEDFILEINFO structure for the version-information resource.
+ 			\VarFileInfo\Translation 			Specifies the translation table in the variable information structure. The function retrieves a pointer to an array of language and character-set identifiers.
+								An application uses these identifiers to create the name of a language-specific structure in the version-information resource.
+ 			\StringFileInfo\lang-charset\string-name 		Specifies a value in a language-specific structure. The lang-charset name is a concatenation of a language and character-set identifier pair
+								found in the translation table for the resource. The lang-charset name must be specified as a hexadecimal string.
+								The string-name name is one of the predefined strings described in the following Remarks section.
+ 	lplpBuffer 		Points to a buffer that receives a pointer to the version-information value.
+	puLen 		Points to a buffer that receives the length, in characters, of the version-information value.
+
+Return Values:
+	If the specified structure exists and version information is available, the return value is nonzero. If the address of the length buffer is zero, no value is available for the specified version-information name.
+	If the specified name does not exist or the specified resource is not valid, the return value is zero.
+
+Remarks:
+The Win32 API contains the following predefined version information strings:
+
+CompanyName FileDescription FileVersion InternalName LegalCopyright OriginalFilename ProductName ProductVersion
+
+The following example shows how to retrieve the FileDescription string-value from a block of version information:
+
+VerQueryValue(pBlock,
+              TEXT("\\StringFileInfo\\040904E4\\FileDescription"),
+              &lpBuffer,
+              &dwBytes);
+ 
+Call the GetFileVersionInfoSize and GetFileVersionInfo functions to properly initialize the pBlock buffer before calling the VerQueryValue function.
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Boolean: BOOL
+.head 5 +  Parameters
+.head 6 -  Number: LPVOID
+.head 6 -  String: LPSTR
+.head 6 -  Receive Number: LPLPVOID
+.head 6 -  Receive Number: LPUINT
+.head 3 +  Library name: KERNEL32.DLL
+.head 4 +  Function: GetSystemDirectoryA
+.head 5 -  Description:
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Number: UINT
+.head 5 +  Parameters
+.head 6 -  Receive String: LPSTR
+.head 6 -  Number: UINT
+.head 4 +  Function: GetTickCount
+.head 5 -  Description:
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Number: LONG
+.head 5 -  Parameters
+.head 4 +  Function: GetVersionExA
+.head 5 -  Description: Struct: OSVERSIONINFO
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Boolean: BOOL
+.head 5 +  Parameters
+.head 6 +  structPointer
+.head 7 -  Number: DWORD
+.head 7 -  Receive Number: DWORD
+.head 7 -  Receive Number: DWORD
+.head 7 -  Receive Number: DWORD
+.head 7 -  Receive Number: DWORD
+.head 7 -  Receive String: char[128]
+.head 4 +  Function: VerLanguageNameA
+.head 5 -  Description:
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Number: DWORD
+.head 5 +  Parameters
+.head 6 -  Number: DWORD
+.head 6 -  Receive String: LPSTR
+.head 6 -  Number: DWORD
+.head 3 +  Library name: ADVAPI32.DLL
+.head 4 +  Function: RegCloseKey
+.head 5 -  Description: function RegCloseKey(hKey: HKEY): Longint;
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Number: LONG
+.head 5 +  Parameters
+.head 6 -  Number: LONG
+.head 4 +  Function: RegOpenKeyExA
+.head 5 -  Description: function RegOpenKeyExA(
+  hKey: HKEY;
+  lpSubKey: PAnsiChar;
+  ulOptions: DWORD;
+  samDesired: REGSAM;
+  var phkResult: HKEY): Longint;
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Number: LONG
+.head 5 +  Parameters
+.head 6 -  Number: LONG
+.head 6 -  String: LPCSTR
+.head 6 -  Number: DWORD
+.head 6 -  Number: DWORD
+.head 6 -  Receive Number: LPLONG
+.head 4 +  Function: RegQueryValueExA
+.head 5 -  Description: function RegQueryValueExA(
+  hKey: HKEY;
+  lpValueName: PAnsiChar;
+  lpReserved: Pointer;
+  lpType: PDWORD;
+  lpData: PByte;
+  lpcbData: PDWORD): Longint;
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Number: LONG
+.head 5 +  Parameters
+.head 6 -  Number: LONG
+.head 6 -  String: LPSTR
+.head 6 -  String: LPVOID
+.head 6 -  Receive Number: LPDWORD
+.head 6 -  Receive String: LPVOID
+.head 6 -  Receive Number: LPDWORD
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 4 -  ! - Standards access type
+.head 4 -  Number: DELETE				= 0x00010000
+.head 4 -  Number: READ_CONTROL			= 0x00020000
+.head 4 -  Number: WRITE_DAC			= 0x00040000
+.head 4 -  Number: WRITE_OWNER			= 0x00080000
+.head 4 -  Number: SYNCHRONIZE 			= 0x00100000
+.head 4 -  Number: STANDARD_RIGHTS_REQUIRED 	= 0x000F0000
+.head 4 -  Number: STANDARD_RIGHTS_READ	= READ_CONTROL
+.head 4 -  Number: STANDARD_RIGHTS_WRITE	= READ_CONTROL
+.head 4 -  Number: STANDARD_RIGHTS_EXECUTE	= READ_CONTROL
+.head 4 -  Number: STANDARD_RIGHTS_ALL		= 0x001F0000
+.head 4 -  Number: SPECIFIC_RIGHTS_ALL		= 0x0000FFFF
+.head 4 -  ! - Reserved Key Handles
+.head 4 -  Number: HKEY_CLASSES_ROOT		= 0x80000000
+.head 4 -  Number: HKEY_CURRENT_USER		= 0x80000001
+.head 4 -  Number: HKEY_LOCAL_MACHINE		= 0x80000002
+.head 4 -  Number: HKEY_USERS			= 0x80000003
+.head 4 -  Number: HKEY_PERFORMANCE_DATA	= 0x80000004
+.head 4 -  Number: HKEY_CURRENT_CONFIG		= 0x80000005
+.head 4 -  Number: HKEY_DYN_DATA		= 0x80000006
+.head 4 -  ! - Registry Specific Access Rights
+.head 4 -  Number: KEY_QUERY_VALUE		= 0x0001
+.head 4 -  Number: KEY_SET_VALUE			= 0x0002
+.head 4 -  Number: KEY_CREATE_SUB_KEY		= 0x0004
+.head 4 -  Number: KEY_ENUMERATE_SUB_KEYS	= 0x0008
+.head 4 -  Number: KEY_NOTIFY			= 0x0010
+.head 4 -  Number: KEY_CREATE_LINK		= 0x0020
+.head 4 -  Number: KEY_ALL_ACCESS		= (STANDARD_RIGHTS_ALL |
+  KEY_QUERY_VALUE | KEY_SET_VALUE | KEY_CREATE_SUB_KEY |
+  KEY_ENUMERATE_SUB_KEYS | KEY_NOTIFY | KEY_CREATE_LINK) & (not SYNCHRONIZE)
+.head 4 -  Number: KEY_READ		= (STANDARD_RIGHTS_READ |
+  KEY_QUERY_VALUE | KEY_ENUMERATE_SUB_KEYS | KEY_NOTIFY) &  (not SYNCHRONIZE)
+.head 4 -  Number: KEY_WRITE		= (STANDARD_RIGHTS_READ |
+  KEY_SET_VALUE | KEY_CREATE_SUB_KEY ) &  (not SYNCHRONIZE)
+.head 4 -  Number: KEY_EXECUTE		= ( KEY_READ ) &  (not SYNCHRONIZE)
+.head 4 -  ! - Error
+.head 4 -  Number: ERROR_SUCCESS = 0
+.head 4 -  ! - OS Versions
+.head 4 -  Number: VERSION_OS_95		= 0
+.head 4 -  Number: VERSION_OS_95_OSR1	= 1
+.head 4 -  Number: VERSION_OS_95_OSR2	= 2
+.head 4 -  Number: VERSION_OS_95_OSR21	= 3
+.head 4 -  Number: VERSION_OS_95_OSR25	= 4
+.head 4 -  Number: VERSION_OS_98		= 5
+.head 4 -  Number: VERSION_OS_98_SE	= 6
+.head 4 -  Number: VERSION_OS_NT_351	= 7
+.head 4 -  Number: VERSION_OS_NT_4	= 8
+.head 4 -  Number: VERSION_OS_2000	= 9
+.head 4 -  Number: VERSION_OS_ME		= 10
+.head 4 -  Number: VERSION_OS_WHISTLER	= 11
+.head 4 -  !
+.head 4 -  Number: VER_PLATFORM_WIN32s = 0
+.head 4 -  Number: VER_PLATFORM_WIN32_WINDOWS = 1
+.head 4 -  Number: VER_PLATFORM_WIN32_NT = 2
+.head 3 +  User
+.head 2 -  Resources
+.head 2 -  Variables
+.head 2 +  Internal Functions
+.head 3 +  Function: IntToHex
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  String:
+.head 4 +  Parameters
+.head 5 -  Number: nInteger
+.head 5 -  Number: nLength
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sHexa
+.head 5 -  Number: nRest
+.head 4 +  Actions
+.head 5 -  Set sHexa = ""
+.head 5 +  Loop B
+.head 6 -  Set nRest = SalNumberMod( nInteger, 16 )
+.head 6 +  If nRest > 9
+.head 7 -  Set nRest = nRest + 7
+.head 6 -  Set sHexa = SalNumberToChar( nRest + 48 ) || sHexa
+.head 6 -  Set nInteger = SalNumberRound( nInteger / 16 - 0.5 )
+.head 6 +  If nInteger = 0
+.head 7 -  Break
+.head 5 +  While SalStrLength(sHexa) < nLength
+.head 6 -  Set sHexa = '0' || sHexa
+.head 5 -  Return sHexa
+.head 3 +  Function: GetFileLanguageId
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  ! String:
+.head 5 -  Number:
+.head 4 +  Parameters
+.head 5 -  String: sFileName
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Number: nBufferSize
+.head 5 -  Number: nBuffer
+.head 5 -  Number: nHandle
+.head 5 -  String: sBufferVersion
+.head 5 -  Number: nBufferVersion
+.head 5 -  Number: nInfoSize
+.head 5 -  Number: nLanguageID
+.head 5 -  Number: nCharacterSet
+.head 5 -  String: sCharset
+.head 5 -  String: sQueryString
+.head 4 +  Actions
+.head 5 -  Set nBufferSize = GetFileVersionInfoSizeA( sFileName, nHandle )
+.head 5 +  If nBufferSize > 0
+.head 6 -  Set nBuffer = CStructAllocFarMem( nBufferSize )
+.head 6 -  Call GetFileVersionInfoA( sFileName, nHandle, nBufferSize, nBuffer )
+.head 6 -  Call VerQueryValueA( nBuffer, "\\VarFileInfo\\Translation", nBufferVersion, nInfoSize )
+.head 6 -  Call SalStrSetBufferLength( sBufferVersion, 256 )
+.head 6 -  Call CStructCopyFromFarMem( nBufferVersion, sBufferVersion, 256 )
+.head 6 -  Set nLanguageID = CStructGetWord( sBufferVersion, 0 )
+.head 6 -  ! Set sCharset = IntToHex( nLanguageID, 4 )
+.head 6 -  Call CStructFreeFarMem( nBuffer )
+.head 6 -  ! Return sCharset
+.head 6 -  Return nLanguageID
+.head 3 +  Function: GetOSVersion
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Number: nVersion
+.head 4 +  Parameters
+.head 5 -  Receive String: sVersion
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Number: nStructSize
+.head 5 -  Number: nMajorVersion
+.head 5 -  Number: nMinorVersion
+.head 5 -  Number: nBuildNumber
+.head 5 -  Number: nPlatformId
+.head 5 -  String: sCSDVersion
+.head 5 -  String: sCSD
+.head 4 +  Actions
+.head 5 -  Set nStructSize = 148
+.head 5 -  Call SalStrSetBufferLength( sCSDVersion,128 )
+.head 5 -  Call GetVersionExA( nStructSize, nMajorVersion, nMinorVersion, nBuildNumber, nPlatformId, sCSDVersion )
+.head 5 -  Set sVersion =SalNumberToStrX( nMajorVersion, 0 )  || "." || SalStrRepeatX( "0", SalStrLength(SalNumberToStrX( nMinorVersion, 0 ) )) ||
+ SalNumberToStrX( nMinorVersion, 0 ) || "." || SalNumberToStrX( nBuildNumber & 0xFFFF, 0 )
+.head 5 -  Call SalStrSetBufferLength( sCSD,129 )
+.head 5 -  Call CStructGetString( sCSDVersion, 0,  SalStrLength(sCSDVersion) + 1, sCSD )
+.head 5 -  Set sVersion = sVersion ||  sCSD
+.head 5 +  If nPlatformId = VER_PLATFORM_WIN32_NT
+.head 6 +  If nMajorVersion = 3 and nMinorVersion = 51
+.head 7 -  Return VERSION_OS_NT_351
+.head 6 +  Else If nMajorVersion  = 4 and nMinorVersion = 0
+.head 7 -  Return VERSION_OS_NT_4
+.head 6 +  Else If nMajorVersion  = 5 and nMinorVersion = 0
+.head 7 -  Return VERSION_OS_2000
+.head 6 +  Else If nMajorVersion  = 5 and nMinorVersion = 1
+.head 7 -  Return VERSION_OS_WHISTLER
+.head 5 +  Else If nPlatformId = VER_PLATFORM_WIN32_WINDOWS
+.head 6 +  If nMajorVersion = 4  and nMinorVersion = 0
+.head 7 +  If sCSDVersion = " A"
+.head 8 -  Return VERSION_OS_95_OSR1
+.head 7 +  Else If sCSDVersion = " B"
+.head 8 -  ! If SalNumberLow(nTemp1) = 1111
+.head 8 -  Return VERSION_OS_95_OSR2
+.head 7 +  Else
+.head 8 -  Return VERSION_OS_95
+.head 6 +  Else If nMajorVersion = 4  and nMinorVersion = 3
+.head 7 +  If sCSDVersion = " B"
+.head 8 -  Return VERSION_OS_95_OSR21
+.head 7 +  Else If sCSDVersion = " C"
+.head 8 -  Return VERSION_OS_95_OSR25
+.head 6 +  Else If nMajorVersion = 4  and nMinorVersion = 10
+.head 7 +  If sCSDVersion = " A"
+.head 8 -  Return VERSION_OS_98_SE
+.head 7 +  Else
+.head 8 -  Return VERSION_OS_98
+.head 6 +  Else If nMajorVersion = 4  and nMinorVersion = 90
+.head 7 -  Return VERSION_OS_ME
+.head 2 -  Named Menus
+.head 2 -  Class Definitions
+.head 2 +  Default Classes
+.head 3 -  MDI Window: cBaseMDI
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Option Button:
+.head 3 -  ActiveX:
+.head 3 -  Check Box:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window: cQuickDatabase
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions
+.head 1 +  Form Window: frmMain
+.head 2 -  Class:
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Windows Information
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? No
+.head 2 -  Visible? Yes
+.head 2 -  Display Settings
+.head 3 -  Display Style? Default
+.head 3 -  Visible at Design time? Yes
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Normal
+.head 3 -  Maximizable? Yes
+.head 3 -  Minimizable? Yes
+.head 3 -  System Menu? Yes
+.head 3 -  Resizable? Yes
+.head 3 -  Window Location and Size
+.head 4 -  Left: Default
+.head 4 -  Top:    Default
+.head 4 -  Width:  8.143"
+.head 4 -  Width Editable? Yes
+.head 4 -  Height: 3.042"
+.head 4 -  Height Editable? Yes
+.head 3 -  Form Size
+.head 4 -  Width:  Default
+.head 4 -  Height: Default
+.head 4 -  Number of Pages: Dynamic
+.head 3 -  Font Name: Default
+.head 3 -  Font Size: Default
+.head 3 -  Font Enhancement: Default
+.head 3 -  Text Color: Default
+.head 3 -  Background Color: Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Default
+.head 4 -  Location? Top
+.head 4 -  Visible? Yes
+.head 4 -  Size: Default
+.head 4 -  Size Editable? Yes
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 3 -  Contents
+.head 2 +  Contents
+.head 3 +  Pushbutton: pbGetWindowsInfos
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Get Windows Information
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.414"
+.head 5 -  Top:    0.198"
+.head 5 -  Width:  2.357"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.292"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Keyboard Accelerator: (none)
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: None
+.head 4 -  Image Style: Single
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 4 +  Message Actions
+.head 5 +  On SAM_Click
+.head 6 -  Set nVersion = GetOSVersion( sOSVersion )
+.head 6 +  Select Case nVersion
+.head 7 +  Case VERSION_OS_95
+.head 8 -  Set dfVersion = "Windows 95 retail, OEM"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_95_OSR1
+.head 8 -  Set dfVersion = "Windows 95 OEM OSR 1"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_95_OSR2
+.head 8 -  Set dfVersion = "Windows 95 OEM OSR 2"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_95_OSR21
+.head 8 -  Set dfVersion = "Windows 95 OEM OSR 2.1"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_95_OSR25
+.head 8 -  Set dfVersion = "Windows 95 OEM OSR 2.5"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_98
+.head 8 -  Set dfVersion = "Windows 98 retail, OEM"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_98_SE
+.head 8 -  Set dfVersion = "Windows 98 Second Edition"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_NT_351
+.head 8 -  Set dfVersion = "Windows NT 3.51"
+.head 8 -  Set sOSString = "Windows NT"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_NT_4
+.head 8 -  Set dfVersion = "Windows NT 4.0"
+.head 8 -  Set sOSString = "Windows NT"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_2000
+.head 8 -  Set dfVersion = "Windows 2000"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_ME
+.head 8 -  Set dfVersion = "Windows Me"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 7 +  Case VERSION_OS_WHISTLER
+.head 8 -  Set dfVersion = "Whistler"
+.head 8 -  Set sOSString = "Windows"
+.head 8 -  Break
+.head 6 -  Set dfVersion = dfVersion || " (Ver " || sOSVersion || ")"
+.head 6 +  If (RegOpenKeyExA (HKEY_LOCAL_MACHINE,"SOFTWARE\\Microsoft\\" || sOSString || "\\CurrentVersion",
+					0,KEY_QUERY_VALUE, hKey) = ERROR_SUCCESS)
+.head 7 -  ! - Windows ID
+.head 7 -  Call SalStrSetBufferLength( sBuffer, 32 )
+.head 7 +  If (RegQueryValueExA(hKey, "ProductId", STRING_Null, nDataType, sBuffer, nSize) = 234)
+.head 8 -  Call SalStrSetBufferLength( sBuffer, nSize )
+.head 8 -  Call RegQueryValueExA(hKey, "ProductId", STRING_Null, nDataType, sBuffer,nSize)
+.head 7 -  Set dfID = sBuffer
+.head 7 -  ! - Windows Registered Owner
+.head 7 -  Call SalStrSetBufferLength( sBuffer, 32 )
+.head 7 +  If (RegQueryValueExA(hKey, "RegisteredOwner", STRING_Null, nDataType, sBuffer, nSize) = 234)
+.head 8 -  Call SalStrSetBufferLength( sBuffer, nSize )
+.head 8 -  Call RegQueryValueExA(hKey, "RegisteredOwner", STRING_Null, nDataType, sBuffer,nSize)
+.head 7 -  Set dfOwner = sBuffer
+.head 7 -  ! - Windows Registered Organization
+.head 7 -  Call SalStrSetBufferLength( sBuffer, 32 )
+.head 7 +  If (RegQueryValueExA(hKey, "RegisteredOrganization", STRING_Null, nDataType, sBuffer, nSize) = 234)
+.head 8 -  Call SalStrSetBufferLength( sBuffer, nSize )
+.head 8 -  Call RegQueryValueExA(hKey, "RegisteredOrganization", STRING_Null, nDataType, sBuffer,nSize)
+.head 7 -  Set dfOrganization = sBuffer
+.head 7 -  Call RegCloseKey( hKey )
+.head 6 -  ! - Windows Language
+.head 6 -  Call SalStrSetBufferLength( sDirectory, 256 )
+.head 6 -  Call GetSystemDirectoryA( sDirectory, 256 )
+.head 6 -  Call SalStrSetBufferLength( sBuffer, 32 )
+.head 6 -  Call VerLanguageNameA( GetFileLanguageId(sDirectory || "\\USER.EXE"), sBuffer, 32 )
+.head 6 -  Set dfLanguage = sBuffer
+.head 6 -  ! - Windows Tick Count
+.head 6 -  Set dfTime = ""
+.head 6 -  Set nTime = GetTickCount(  ) /1000
+.head 6 -  Set nDays =  SalNumberTruncate( nTime / (24 * 3600), 2, 0 )
+.head 6 +  If nDays > 0
+.head 7 -  Set nTime = nTime - (24* 3600 * nDays)
+.head 7 -  Set dfTime = SalNumberToStrX( nDays, 0 ) || " day(s) "
+.head 6 -  Set nHours = SalNumberTruncate( nTime / 3600, 2,0)
+.head 6 +  If nHours > 0
+.head 7 -  Set nTime = nTime - ( 3600 * nHours)
+.head 7 -  Set dfTime =dfTime ||  SalNumberToStrX( nHours, 0 ) || " hour(s) "
+.head 6 -  Set nMinutes = SalNumberTruncate(nTime / 60, 2,0)
+.head 6 -  Set dfTime =dfTime ||  SalNumberToStrX( nMinutes, 0 ) || " min(s) "
+.head 6 -  Set nSeconds =  SalNumberTruncate(SalNumberMod( nTime, 60 ), 2, 0)
+.head 6 -  Set dfTime =dfTime ||  SalNumberToStrX( nSeconds, 0 ) || " sec(s)"
+.head 3 -  Background Text: Windows Name && Version
+.head 4 -  Resource Id: 6483
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.414"
+.head 5 -  Top:    0.76"
+.head 5 -  Width:  2.486"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.167"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Justify: Left
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 3 +  Data Field: dfVersion
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 3.071"
+.head 6 -  Top:    0.698"
+.head 6 -  Width:  4.5"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Justify: Center
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Yellow
+.head 5 -  Background Color: Black
+.head 5 -  Input Mask: Unformatted
+.head 4 -  Message Actions
+.head 3 -  Background Text: Windows ID
+.head 4 -  Resource Id: 6484
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.414"
+.head 5 -  Top:    1.052"
+.head 5 -  Width:  2.486"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.167"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Justify: Left
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 3 +  Data Field: dfID
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 3.071"
+.head 6 -  Top:    0.99"
+.head 6 -  Width:  4.5"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Justify: Center
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Yellow
+.head 5 -  Background Color: Black
+.head 5 -  Input Mask: Unformatted
+.head 4 -  Message Actions
+.head 3 -  Background Text: Windows Language
+.head 4 -  Resource Id: 6487
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.414"
+.head 5 -  Top:    1.344"
+.head 5 -  Width:  2.229"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.167"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Justify: Left
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 3 +  Data Field: dfLanguage
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 3.071"
+.head 6 -  Top:    1.281"
+.head 6 -  Width:  4.5"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Justify: Center
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Yellow
+.head 5 -  Background Color: Black
+.head 5 -  Input Mask: Unformatted
+.head 4 -  Message Actions
+.head 3 -  Background Text: Registered Owner
+.head 4 -  Resource Id: 6485
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.414"
+.head 5 -  Top:    1.635"
+.head 5 -  Width:  2.486"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.167"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Justify: Left
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 3 +  Data Field: dfOwner
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 3.071"
+.head 6 -  Top:    1.573"
+.head 6 -  Width:  4.5"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Justify: Center
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Yellow
+.head 5 -  Background Color: Black
+.head 5 -  Input Mask: Unformatted
+.head 4 -  Message Actions
+.head 3 -  Background Text: Registered Organization
+.head 4 -  Resource Id: 6486
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.414"
+.head 5 -  Top:    1.927"
+.head 5 -  Width:  2.371"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.167"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Justify: Left
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 3 +  Data Field: dfOrganization
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 3.071"
+.head 6 -  Top:    1.865"
+.head 6 -  Width:  4.5"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Justify: Center
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Yellow
+.head 5 -  Background Color: Black
+.head 5 -  Input Mask: Unformatted
+.head 4 -  Message Actions
+.head 3 -  Background Text: Time since Windows Start-Up
+.head 4 -  Resource Id: 6277
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.414"
+.head 5 -  Top:    2.198"
+.head 5 -  Width:  2.6"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.167"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Justify: Left
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 3 +  Data Field: dfTime
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 3.071"
+.head 6 -  Top:    2.156"
+.head 6 -  Width:  4.5"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Justify: Center
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Yellow
+.head 5 -  Background Color: Black
+.head 5 -  Input Mask: Unformatted
+.head 4 -  Message Actions
+.head 2 -  Functions
+.head 2 -  Window Parameters
+.head 2 +  Window Variables
+.head 3 -  Number: nVersion
+.head 3 -  String: sOSVersion
+.head 3 -  !
+.head 3 -  String: sOSString
+.head 3 -  String: sDirectory
+.head 3 -  String: sBuffer
+.head 3 -  Number: hKey
+.head 3 -  Number: nDataType
+.head 3 -  Number: nSize
+.head 3 -  !
+.head 3 -  Number: nTime
+.head 3 -  Number: nDays
+.head 3 -  Number: nHours
+.head 3 -  Number: nMinutes
+.head 3 -  Number: nSeconds
+.head 2 +  Message Actions
+.head 3 +  On SAM_Create
+.head 4 -  Call SalCenterWindow( hWndForm )

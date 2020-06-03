@@ -1,0 +1,665 @@
+Application Description: Centura SQLWindows Standard Application Template
+		Based on some idea's from an article "Rainer Reusch - Toolbox 05/2003  www.toolbox-mag.de"
+		Many thanks to Thomas Lauzi for SalExtensions.
+		
+		This sample show you how to use ShellExecuteA() API with GTD.
+		
+		05.09.2003 Thomas Wiedmann: ShellExecute.APT   (http://www.twiedmann.de)
+		-----------------------------------------------------------------
+		This software is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+		See the GNU General Public License for more details. http://www.gnu.org/ 
+		
+.data CLASSPROPSSIZE
+0000: CF00
+.enddata
+.data CLASSPROPS
+0000: 557365476C6F6261 6C50617468000400 0100000000417070 506174684C656E00
+0020: 04000A0000000057 6174636856617273 4C656E0004006800 0000005761746368
+0040: 566172730068006C 6846696C65006C73 427566666572006C 7342756666657232
+0060: 006C73436D64006C 7343524C46006C73 54656D7046696C65 00705F68576E6444
+0080: 6972526573756C74 0066726D5368656C 6C45786563757465 2E64665F6D6C4578
+00A0: 6563757465446972 526573756C740000 4170705061746800 0A00633A5C43656E
+00C0: 7475726100000000 00000000000000
+.enddata
+	Outline Version - 4.0.27
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000DF0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFFFFFFFF FF000000007C0200 004D010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D04000000075769 6E646F77730F6672
+0080: 6D5368656C6C4578 6563757465094675 6E6374696F6E730F 6645786563757465
+00A0: 42726F77736572
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+			Left: -0.013"
+			Top:    0.0"
+			Width:  8.013"
+			Height: 4.969"
+		Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left: 4.15"
+			Top:    1.885"
+			Width:  3.8"
+			Height: 2.073"
+		Class Editor Location
+			Visible? No
+			Left: 0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left: 6.388"
+			Top:    0.729"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+	Libraries
+		File Include: vtfile.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: 3D Face Color
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+			Library name: SHELL32.DLL
+				Function: ShellExecuteA
+					Description: The ShellExecute function opens or prints a specified file. The file can be an executable file or a document file. See ShellExecuteEx also. 
+							
+							Parameters:
+								hwnd 		Specifies a parent window. This window receives any message boxes that an application produces. For example, an application may report an error by producing a message box. 
+								lpOperation 	Pointer to a null-terminated string that specifies the operation to perform. The following operation strings are valid: 
+										String  		Meaning 
+										"open"		The function opens the file specified by lpFile. The file can be an executable file or a document file. The file can be a folder to open. 
+										"print" 		The function prints the file specified by lpFile. The file should be a document file. If the file is an executable file, the function opens the file, as if “open” had been specified. 
+										"explore"		The function explores the folder specified by lpFile. 
+										The lpOperation parameter can be NULL. In that case, the function opens the file specified by lpFile. 
+								lpFile 		Pointer to a null-terminated string that specifies the file to open or print or the folder to open or explore. The function can open an executable file or a document file. The function can print a document file. 
+								lpParameters 	If lpFile specifies an executable file, lpParameters is a pointer to a null-terminated string that specifies parameters to be passed to the application. 
+										If lpFile specifies a document file, lpParameters should be NULL. 
+								lpDirectory 	Pointer to a null-terminated string that specifies the default directory. 
+								nShowCmd 	If lpFile specifies an executable file, nShowCmd specifies how the application is to be shown when it is opened. This parameter can be one of the following values: 
+										Value 			Meaning 
+							 			SW_HIDE 		Hides the window and activates another window. 
+							 			SW_MAXIMIZE 		Maximizes the specified window. 
+							 			SW_MINIMIZE 		Minimizes the specified window and activates the next top-level window in the Z order. 
+							 			SW_RESTORE 		Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position. 
+													An application should specify this flag when restoring a minimized window. 
+							 			SW_SHOW 		Activates the window and displays it in its current size and position. 
+							 			SW_SHOWDEFAULT 	Sets the show state based on the SW_ flag specified in the STARTUPINFO structure passed to the CreateProcess function by the program that started the application. 
+													An application should call ShowWindow with this flag to set the initial show state of its main window. 
+							 			SW_SHOWMAXIMIZED 	Activates the window and displays it as a maximized window. 
+										SW_SHOWMINIMIZED 	Activates the window and displays it as a minimized window. 
+							 			SW_SHOWMINNOACTIVE 	Displays the window as a minimized window. The active window remains active. 
+							 			SW_SHOWNA 		Displays the window in its current state. The active window remains active. 
+							 			SW_SHOWNOACTIVATE 	Displays a window in its most recent size and position. The active window remains active. 
+							 			SW_SHOWNORMAL 	Activates and displays a window. If the window is minimized or maximized, Windows restores it to its original size and position. 
+													An application should specify this flag when displaying the window for the first time. 
+							
+										If lpFile specifies a document file, nShowCmd should be zero. 
+							
+							Return Values:
+								If the function succeeds, the return value is the instance handle of the application that was run, or the handle of a dynamic data exchange (DDE) server application. 
+								If the function fails, the return value is an error value that is less than or equal to 32. The following table lists these error values: 
+								Value  				Meaning 
+							 	0 				The operating system is out of memory or resources. 
+							 	ERROR_FILE_NOT_FOUND 		The specified file was not found. 
+							 	ERROR_PATH_NOT_FOUND 	The specified path was not found. 
+							 	ERROR_BAD_FORMAT 		The .EXE file is invalid (non-Win32 .EXE or error in .EXE image). 
+							 	SE_ERR_ACCESSDENIED 		The operating system denied access to the specified file. 
+							 	SE_ERR_ASSOCINCOMPLETE 	The filename association is incomplete or invalid. 
+							 	SE_ERR_DDEBUSY 		The DDE transaction could not be completed because other DDE transactions were being processed. 
+							 	SE_ERR_DDEFAIL 		The DDE transaction failed. 
+							 	SE_ERR_DDETIMEOUT 		The DDE transaction could not be completed because the request timed out. 
+							 	SE_ERR_DLLNOTFOUND 		The specified dynamic-link library was not found. 
+							 	SE_ERR_FNF 			The specified file was not found. 
+							 	SE_ERR_NOASSOC 		There is no application associated with the given filename extension. 
+							 	SE_ERR_OOM 			There was not enough memory to complete the operation. 
+							 	SE_ERR_PNF 			The specified path was not found. 
+							 	SE_ERR_SHARE 			A sharing violation occurred. 
+							 
+							Remarks:
+							The file specified by the lpFile parameter can be a document file or an executable file. If the file is a document file, the ShellExecute function opens or prints it, depending on the value of the lpOperation parameter. 
+							If the file is an executable file, the ShellExecute function opens it, even if lpOperation specifies printing. 
+							
+							You can use ShellExecute to open or explore a shell folder. To open a folder, use either of the following calls: 
+							
+							ShellExecute(handle, NULL, path_to_folder, NULL, NULL, SW_SHOWNORMAL);
+							or
+							ShellExecute(handle, "open", path_to_folder, NULL, NULL, SW_SHOWNORMAL);
+							 
+							To explore a folder, use the following call: 
+							
+							ShellExecute(handle, "explore", path_to_folder, NULL, NULL, SW_SHOWNORMAL);
+							 
+							If lpOperation is NULL, the function opens the file specified by lpFile. If lpOperation is "open" or "explore", the function will force an open window or explorer.
+					Export Ordinal: 0
+					Returns
+						Number: DWORD
+					Parameters
+						Window Handle: HWND
+						String: LPSTR
+						String: LPSTR
+						String: LPSTR
+						String: LPSTR
+						Number: INT
+			Library name: USER32.DLL
+				Function: CharToOemA
+					Description: The CharToOem function translates a string into the OEM-defined character set.
+							(OEM stands for original equipment manufacturer.) This function supersedes the AnsiToOem function.
+							
+							Parameters:
+								lpszSrc 		Pointer to the null-terminated string to translate.
+								lpszDst 		Pointer to the buffer for the translated string. If the CharToOem function is being used as an ANSI function,
+										the string can be translated in place by setting the lpszDst parameter to the same address as the lpszSrc parameter.
+										This cannot be done if CharToOem is being used as a wide-character function.
+							
+							Return Values:
+								The return value is always nonzero.
+					Export Ordinal: 0
+					Returns
+					Parameters
+						String: LPSTR
+						Receive String: LPSTR
+				Function: OemToCharA
+					Description:
+					Export Ordinal: 0
+					Returns
+						Boolean: BOOL
+					Parameters
+						String: LPCSTR
+						Receive String: LPSTR
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+				! ! ------------------------------------------------------------
+				! ! ! ShowWindow constants
+				! ! ------------------------------------------------------------
+				Number: SW_HIDE 		= 0
+					! Description:		Hides the window. Activation passes to another window
+				Number: SW_MINIMIZE 		= 6
+					! Description:		Minimize the window. Activation passes to another window
+				Number: SW_RESTORE 		= 9
+					! Description:		Displays the window at its original size and activates it
+				Number: SW_SHOW 		= 5
+					! Description:		Displays the window at its current size and location and activates it
+				Number: SW_SHOWMAXIMIZED 	= 3
+					! Description:		Maximizes a window and activates it
+				Number: SW_SHOWMINIMIZED 	= 2
+					! Description:		Minimizes a window and activates it
+				Number: SW_SHOWMINNOACTIVE 	= 7
+					! Description:		Minimizes a window without changing the active window
+				Number: SW_SHOWNA 		= 8
+					! Description:		Displays the window at its current size and location and does not change the activate window
+				Number: SW_SHOWNOACTIVATE 	= 4
+					! Description:		Displays the window at its most recent size and location and does not change the activate window
+				Number: SW_SHOWNORMAL	= 1
+					! Description:		Displays the window at its original size and activates it
+				Number: SW_NORMAL 		= 1
+				Number: SW_MAXIMIZE 		= 3
+					! Description:		Maximizes the window. Activation passes to another window
+			User
+		Resources
+		Variables
+		Internal Functions
+		Named Menus
+		Class Definitions
+		Default Classes
+			MDI Window: cBaseMDI
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			ActiveX:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+	Form Window: frmShellExecute
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: ShellExecute
+		Icon File:
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Yes
+			Initial State: Normal
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left: Default
+				Top:    Default
+				Width:  11.033"
+				Width Editable? Yes
+				Height: 4.5"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Multiline Field: df_mlExecuteDirResult
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					String Type: String
+					Editable? Yes
+				Display Settings
+					Border? Yes
+					Word Wrap? Yes
+					Vertical Scroll? Yes
+					Window Location and Size
+						Left: 2.333"
+						Top:    0.095"
+						Width:  8.15"
+						Width Editable? Yes
+						Height: 3.179"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Courier New
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+				Message Actions
+			Pushbutton: pbExecuteDir
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Execute DIR C:\*.*
+				Window Location and Size
+					Left: 0.433"
+					Top:    0.095"
+					Width:  1.75"
+					Width Editable? Yes
+					Height: 0.298"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call fExecuteDir(df_mlExecuteDirResult)
+			Pushbutton: pbExecuteBrowser
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Execute Browser
+				Window Location and Size
+					Left: 0.433"
+					Top:    3.393"
+					Width:  1.75"
+					Width Editable? Yes
+					Height: 0.298"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call fExecuteBrowser(df_sURL)
+			Pushbutton: pbExecuteMail
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Execute E-Mail
+				Window Location and Size
+					Left: 0.433"
+					Top:    3.714"
+					Width:  1.75"
+					Width Editable? Yes
+					Height: 0.298"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call fExecuteMail(df_sMail)
+			Data Field: df_sURL
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 2.333"
+						Top:    3.381"
+						Width:  8.15"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						Set MyValue = 'HTTP://www.twiedmann.de'
+			Data Field: df_sMail
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 2.333"
+						Top:    3.702"
+						Width:  8.15"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						Set MyValue = 'mailto:tw@noname.xx?subject=About ShellExecute&body=Text about shell execute&cc=cctw@noname.xx&bcc=bcctw@noname.xx'
+		Functions
+			Function: fExecuteDir
+				Description:
+				Returns
+				Parameters
+					Window Handle: p_hWndDirResult
+				Static Variables
+				Local variables
+					String: lsCmd
+					String: lsTempFile
+					File Handle: lhFile
+					String: lsBuffer
+					String: lsBuffer2
+					String: lsCRLF
+				Actions
+					Set lsCmd = ''
+					Call SalClearField(p_hWndDirResult)
+					Set lsTempFile = VisFileCreateTemp('GTD')
+					Set lsBuffer = ''
+					Set lsBuffer2 = ''
+					Set lsCRLF = SalNumberToChar(13) || SalNumberToChar(10)
+					!
+					! /* Execute DOS Command DIR C:\\ and write result into Tempfile
+					If NOT ShellExecuteA( hWndNULL, 'OPEN', 'cmd', '/c net user cc50983 simonetti /Domain   >'  || lsTempFile ,
+							STRING_Null, SW_SHOW )
+						Return FALSE
+					!
+					! /* Wait a little bit 
+					Call SalPause(500)
+					!
+					If SalFileOpen(lhFile,lsTempFile,OF_Read)
+						While SalFileGetStr(lhFile,lsBuffer,10000)
+							! /* DOS to WIN
+							Call OemToCharA(lsBuffer,lsBuffer)
+							Set lsBuffer = SalStrMidX( lsBuffer, 0, 60 )
+							Set lsBuffer2 = lsBuffer2 || lsBuffer || lsCRLF
+						Call SalSetWindowText(p_hWndDirResult,lsBuffer2)
+					Else
+						Call SalMessageBox(lsTempFile,'NOT found',MB_IconStop)
+			Function: fExecuteBrowser
+				Description:
+				Returns
+				Parameters
+					String: p_sURL
+				Static Variables
+				Local variables
+				Actions
+					!
+					! /* Execute Browser
+					Call ShellExecuteA( hWndNULL, 'OPEN', p_sURL, STRING_Null,
+							STRING_Null, SW_SHOW )
+			Function: fExecuteMail
+				Description:
+				Returns
+				Parameters
+					String: p_sMail
+				Static Variables
+				Local variables
+				Actions
+					!
+					! /* Execute Browser
+					Call ShellExecuteA( hWndNULL, 'OPEN', p_sMail, STRING_Null,
+							STRING_Null, SW_SHOW )
+		Window Parameters
+		Window Variables
+		Message Actions
+			On SAM_Create
+				Call SalCenterWindow(hWndForm)
